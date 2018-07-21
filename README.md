@@ -1,5 +1,5 @@
 # attendance-spreadsheet
-**Synopsis**
+**Synopsis** <br/>
 Built originally for World Oceans Day, this lightweight Python script helps users upload event attendees into an Excel spreadsheet.
 
 **How to Use**
