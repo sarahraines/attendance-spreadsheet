@@ -7,8 +7,6 @@ from titlecase import titlecase
 from fuzzywuzzy import process, fuzz
 import sys
 
-counter = 0
-
 def new_tup(orgname, year):
   switch = {
     2014: (orgname, 1, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None),
@@ -56,8 +54,6 @@ if __name__ == '__main__':
   orgs = [titlecase(org) for org in orgs]
 
   for row in ws.iter_rows(min_row=2, max_row=ws.max_row):
-    counter += 1
-    print(counter)
     if row[0].value != None:
       if row[0].value in orgs:
         orgs.remove(row[0].value)
